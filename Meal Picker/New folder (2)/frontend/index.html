@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lazy Meal Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <div class="top-bar">
+        <div>
+            <h1>Lazy Meal Picker 🍔</h1>
+            <p class="subtitle">Premium lazy food decision app</p>
+        </div>
+        <button class="icon-btn" onclick="toggleTheme()">🌙</button>
+    </div>
+
+    <div class="daily-box">
+        <p>Meal of the Day</p>
+        <h3 id="dailyMeal">Loading...</h3>
+    </div>
+
+    <div class="controls">
+        <select id="category">
+            <option value="all">All meals</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="snack">Snack</option>
+        </select>
+
+        <input id="maxTime" type="number" placeholder="Max preparation time">
+        <input id="maxCalories" type="number" placeholder="Max calories">
+
+        <label class="check-box">
+            <input type="checkbox" id="vegetarian">
+            Vegetarian only
+        </label>
+    </div>
+
+    <div class="main-buttons">
+        <button onclick="getMeal()">Pick My Meal</button>
+        <button onclick="surpriseMe()">🎲 Surprise Me</button>
+    </div>
+
+    <div id="mealCard" class="meal-card hidden">
+        <div id="mealEmoji" class="emoji">🍽️</div>
+        <h2 id="mealName"></h2>
+        <p id="mealInfo"></p>
+        <p id="mealNote"></p>
+
+        <div class="rating">
+            <span onclick="rateMeal(1)">⭐</span>
+            <span onclick="rateMeal(2)">⭐</span>
+            <span onclick="rateMeal(3)">⭐</span>
+            <span onclick="rateMeal(4)">⭐</span>
+            <span onclick="rateMeal(5)">⭐</span>
+        </div>
+
+        <div class="card-buttons">
+            <button onclick="saveFavorite()">❤️ Save</button>
+            <button onclick="copyMeal()">📋 Copy</button>
+        </div>
+    </div>
+
+    <p id="message"></p>
+
+    <div class="stats">
+        <div>
+            <span id="pickCount">0</span>
+            <p>Picks</p>
+        </div>
+        <div>
+            <span id="favCount">0</span>
+            <p>Favorites</p>
+        </div>
+        <div>
+            <span id="historyCount">0</span>
+            <p>History</p>
+        </div>
+        <div>
+            <span id="ratingCount">0</span>
+            <p>Ratings</p>
+        </div>
+    </div>
+
+    <div class="lists">
+        <div class="list-box">
+            <h3>History</h3>
+            <ul id="history"></ul>
+            <button class="danger" onclick="clearHistory()">Clear History</button>
+        </div>
+
+        <div class="list-box">
+            <h3>Favorites</h3>
+            <ul id="favorites"></ul>
+            <button class="danger" onclick="clearFavorites()">Clear Favorites</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
