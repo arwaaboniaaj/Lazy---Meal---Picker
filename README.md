@@ -82,7 +82,7 @@ Users data such as favorites, history, and stats are saved in the browser's loca
 * Add a real database (MySQL/SQLite)
 * Implement a user login system
 * Refined UI/UX design
-*Add meal images
+* Add meal images
   
 --- 
 
