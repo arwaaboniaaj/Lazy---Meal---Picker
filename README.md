@@ -49,11 +49,13 @@ Before running the project you need to have:
 --- 
 
 ## Project Structure 
- project-folder/
-| Application.java (backend)
-|__ index.html (frontend)
-|__ style.css  (frontend)
-|__ script.js  (frontend)
+project-folder/
+├── backend/
+│     └── Application.java
+└── frontend/
+      ├── index.html
+      ├── style.css
+      └── script.js
 
 --- 
 
