@@ -4,7 +4,7 @@
 
 This project is a meal planning web application build with Java, and JavaScript. The application provides a simple web interface to browse and explore different meals based on users preference .
 
-The application uses the built-in HTTP server of Java to process requests, and return mea data. No database is needed for storing meal data in memory with the help of java arrays.
+The application uses the built-in HTTP server of Java to process requests, and return meal data. No database is needed for storing meal data in memory with the help of java arrays.
 
 The project shows:
 
