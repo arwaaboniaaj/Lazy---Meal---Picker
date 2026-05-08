@@ -43,7 +43,8 @@ The project shows:
 Before running the project you need to have:
 * Java JDK 17 or higher
 * IntelliJ IDEA / VS Code
-*A web browser (Chrome, Edge, Firefox, etc.)
+* A web browser (Chrome, Edge, Firefox, etc.)
+
 
 --- 
 
